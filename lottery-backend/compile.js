@@ -23,11 +23,4 @@ var input = {
   
 var output = JSON.parse(solc.compile(JSON.stringify(input)));
 
-
-
-// console.log(output.contracts['Lottery.sol'].Lottery);
-
-// let output = solc.compile(source, 1).contracts["Lottery"];
-// console.log(output);
-
 module.exports = output.contracts['Lottery.sol'].Lottery;

@@ -1,0 +1,118 @@
+*{
+  margin : 0; 
+  padding : 0; 
+  box-sizing: border-box;
+  font-family: cursive;
+
+}
+
+body{
+  /* background: red; */
+  
+  min-width: 650px;
+  background: #312f2f;
+}
+.container{
+  /* background-color: blue; */
+  /* background: #6ee7b7; */
+  background: #1d1d1d;
+
+  padding: 2% 1%;
+  width: 600px;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.manager{
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.manager p {
+  margin-bottom: 5px;
+}
+
+.highlight{
+  font: bold;
+  font-size: 1.2rem;
+}
+.participate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+.participate span{
+    width: 350px;
+    padding: 2% 6%;
+    /* background: green; */
+    border-radius: 3px;
+    margin : 0 auto; 
+    text-align: center;
+}
+
+.participate form{
+  margin-top : 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.participate form div{
+  text-align: center;
+}
+
+.participate form div input{
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.participate form div label{
+  font-size: 1.2rem;
+}
+
+.participate form button{
+  margin-top : 20px;
+  padding : 8px 15px; 
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.pick-winner{
+  width : 100%;
+  display: flex; 
+  justify-content: center;
+}
+
+.pick-winner button{
+  padding : 8px 15px; 
+  margin-top: 30px;
+}
+
+.winner{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top : 20px;
+  /* margin-bottom : 10px;  */
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+}
