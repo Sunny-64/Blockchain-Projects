@@ -80,7 +80,7 @@ const abi = [
 	}
 ]; 
 
-const address = "0xc3491939706Cd103118212D3193b74f45e1bcc16"; 
+const address = "0x05C2408Abc9CA06Ee4ECbC32C5405036Dc89981c"; 
 const lottery = new web3.eth.Contract(abi, address); 
 
 export default lottery; 
