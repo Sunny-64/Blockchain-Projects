@@ -94,4 +94,15 @@ contract Campaign{
     function noOfContributors() public view returns(uint){
         return contributorsCount; 
     }
+
+    function getSummary() public view returns(uint, uint, uint, uint, address){
+        
+        return(
+            minimumContribution, 
+            address(this).balance,
+            requests.length,
+            contributorsCount,
+            manager
+        );
+    }
 }

@@ -1,3 +1,4 @@
+require("./compile"); 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const { Web3 } = require('web3');
 const provider = new HDWalletProvider(
@@ -5,11 +6,7 @@ const provider = new HDWalletProvider(
   process.env.API_KEY
 )
 let compiledCampaignFactory = require("./build/CampaignFactory.json"); 
-let compiledCampaign = require("./build/Campaign.json"); 
 
-// console.log(compiledCampaignFactory);
-
-// console.log(compiledCampaignFactory.evm.bytecode.object); 
 const web3 = new Web3(provider);
 
 const deploy = async () => {
