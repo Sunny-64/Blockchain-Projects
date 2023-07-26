@@ -9,7 +9,7 @@ contract QsToken is ERC20 {
     address public owner; 
 
     constructor(uint _initialSupply) ERC20(tokenName, tokenSymbol){
-        _mint(msg.sender, _initialSupply);
+        _mint(msg.sender, _initialSupply * 10 ** 18);
         owner = msg.sender;
     }
 
